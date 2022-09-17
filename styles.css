@@ -1,0 +1,33 @@
+.rounded-img {
+    width: 60%;
+    border-radius: 70%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 0.6em;
+    margin-bottom: 1em;
+  }
+
+/*Класс для второй панели навигации*/
+.nav-second{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.second-nav-item{
+  font-size: large;
+}
+.second-nav-item:hover{
+  text-decoration: underline;
+}
+.second-nav-link-primary{
+  color: rgb(0, 148, 198);
+  font-weight: bold;
+  text-decoration: underline;
+}
+.second-nav-link{
+  color: rgb(48, 14, 222);
+}
+.second-nav-link:hover{
+  color: rgb(48, 14, 222);
+}
+.bg-orange {
+  background-color: #fd7e14;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My favorite places</title>
+    <!--Подключаем SCC и JS Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <!--Полдключаем наши собственные CSS-стили-->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+      .card {
+        border-radius: 0.4em;
+        text-align: center;
+        padding: 0.3em;
+        
+      }
+      .card:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      .card img {
+        border-radius: 0.4em;
+        margin: auto;
+        width: 100%;       
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand p-0" href="/">
+          <img src="../logo.png" alt="Logo" width="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="portfolio-arts.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../education/assimilated-materials.html">Education</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Blog</a>
+                </li>
+              </ul>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="nav justify-content-center nav-box nav-second">
+      <li class="nav-item second-nav-item">
+        <a class="nav-link second-nav-link" href="portfolio-arts.html ">Arts</a>
+      </li>
+      <li class="nav-item second-nav-item">
+        <a class="nav-link  second-nav-link-primary"  href="portfolio-articles.html">Articles</a>
+      </li>
+      <li class="nav-item second-nav-item">
+        <a class="nav-link second-nav-link" href="#">Projects</a>
+      </li>
+    </ul>
+
+    <main class="container">
+      
+        <div class="row g-6">
+          <div class="col-md-12">
+
+      
+            <article class="blog-post">
+              <h2 class="blog-post-title mb-1">Raspberry Pi – почему он стал таким популярным? Кейсы его реального применения.</h2>
+              <p class="blog-post-meta mt-3 mb-1">Дата публикации: 14 января 2021 года</p>
+              <p class="blog-post-meta mt-1 mb-3">Автор: Шенгелай Всеволод</p>
+              
+              <h3>Что собой представляет Raspberry Pi?</h3>
+              <p>Raspberry Pi – одноплатный компьютер, который может целиком уместиться на ладони. Изначально «малиновый пирог» был разработан в Raspberry Pi Foundation как недорогая платформа для обучения информатике. Большая часть моделей Raspberry Pi выполнены на четырёхслойной печатной плате размером с пластиковую карту и не требуют сборки, так как все элементы компьютера, включая процессор в виде BGA-микросхемы, уже впаяны в системную плату. Соответственно, у данного вида компьютеров нет иной возможности модернизации, кроме как добавления немногочисленных адаптеров и подключения usb-устройств, расширяющих его функционал, или увеличивающих возможности системы. Например, к Paspberry Pi таким образом можно добавить Bluetooth-модуль, WI-FI-модем, увеличить объём оперативной памяти с помощью ReadyBoost – программной технологии Microsoft, позволяющей увеличить быстродействие компьютера за счет памяти подключаемого флеш-накопителя.</p>
+              <h3>Краткая история</h3>
+              <p>Raspberry разрабатывается Фондом Raspberry Pi Foundation - это благотворительной организации, основанной в 2009 году для содействия изучению основ информатики в школа</p>
+              <p>Первая модель, собранная на плате однокристальной системы Broadcom, вышла в 2011 году в виде прототипа, и уже спустя год 10 000-м «тиражом» разошлась среди компьютерщиков-энтузиастов. Выпуск финальной версии модели Raspberry Pi B начался в феврале 2012 г. Цена на момент релиза составляла $35, а спустя год, в феврале 2013 г., состоялась презентация Raspberry Pi A стоимостью $20 – процесс производства был удешевлён и оптимизирован под массовый выпуск.</p>
+              <p>С 2012 по 2015 годы вышли Raspberry Pi «B», Raspberry Pi «B+», Raspberry Pi «2 model B»</p>
+              <p>В ноябре 2015 г. и феврале 2017 г. разработчики проекта создали «Облегченные» версии – Zero и Zero W. Основные их отличия – цена в 5 и 10 долларов соответственно и несмонтированный разъём GPIO.</p>
+              <p>С 2016 по 2018 годы вышли Raspberry Pi 3, Raspberry Pi Zero W, Raspberry Pi 3B+. Главное отличие моделей третьего поколения – наличие Wi-FI, Bluetooth, Ethernet (в последней модели его скорость может достигать 1Гбит в секунду), более мощные 64-битные процессоры</p>
+              <p>В конце июня 2019 г. был выпущен Raspberry Pi 4. Новинка получила полное обновление основных компонентов, включая процессор, память и интерфейсы, но сохранила старую цену – $35 (63 - в максимальной комплектации).</p>
+              <img src="images-articles/Raspberry-1_1.png" class="img-fluid mx-auto d-block" alt="Плата RaspberryPi 4 Model B">
+              <p class="text-center my-2">Рисунок 1. Raspberry Pi 4 Model B</p>
+              
+              <h3>ОС для одноплатного ПК</h3>
+              <p>Изначально Raspberry Pi был разработан с расчётом на то, что будет работать под ОС Linux – это делало его более универсальным, но в 2015 году Raspbian официально представила Raspberry Pi Foundation как основную ОС для своих компьютеров. Raspbian OS оптимизирована для низкопроизводительных процессоров ARM, которые ставятся на последнюю модель - Raspberry Pi4 .</p>
+              <p> Вообще, на практике на Papberry Pi (не позднее третьей версии) хорошо работают следующие ОС:</p>
+              <ul>
+                <li><b>OSMC (Open Source Media Center)</b> — лучшее, наиболее функциональное мультимедийное программное обеспечение о открытым программным кодом. </li>
+                <li><b>ARCHLINUX</b>– её специальная версия для Raspberry Pi. ОС является независимым дистрибутивом GNU/Linux общего назначения.</li>
+                <li><b>PI MUSICBOX</b>– это дистрибутив, основанный на Mopidy Music Steraming Server. Является автономным потоковым музыкальным проигрывателем для Spotify, Google Music, SoundCloud, Webradio, подкастов и другой музыки из облака.</li>
+                <li><b>RETROPIE</b>– позволяет превратить малиновый компьютер в игровую приставку для ретро-игр</li>
+                <li><b>OPENMEDIAVAULT</b>– превращает компьютер в машину для управления сервером, хранящем данные на файловом уровне </li>
+                <li><b>RISK OS</b>– ОС, разработчиками которой являются инженеры компании, которая разработала первый процессор с архитектурой ARM.</li>
+                <li><b>Windows 10 ARM </b>WOA Deployer, который устанавливает ARM-версию Windows 10 на microSD. Идея плохая, так как карте памяти даже последнего - 10 класса, будет не хватать скорости записи и чтения. Система будет работать стабильно с microSD со скоростью записи не менее 60 Мб/с, чтения – не менее 100 Мб/с</li>
+                <li><b>Android</b>– различные сборки</li>
+              </ul>
+
+              <h3>Ответим на вопрос: «Почему Raspberry PC так популярен?»</h3>
+              <p>Популярность и продолжающийся успех Raspberry Pi обусловлены его доступной ценой и невероятным сообществом.</p>
+              <p>Эбен Аптон – один из создателей одноплатного компьютера, при создании этого ПК поставил задачу сделать недорогое, прочное (чтобы его можно было доставать из портфеля без защитного корпуса тысячи раз) устройство, которое поможет всем обучаться программированию (главный покупатель всё же школьник или подросток – идея создать такой ПК возникла у его создателей из-за недонабора студентов на оксфордские курсы по программированию и алгоритмам). Всего за 25 долларов он компьютер привлек огромный круг пользователей - от школьников до профессиональных программистов. На сегодняшний день выпущено уже 30 млн Raspberry Pi всех моделей.</p>
+
+              <h3>Применения, которые можно найти Raspberry Pi</h3>
+              <h3>#Сделать кластер из компьютеров Raspberry Pi</h3>
+              <p>В последние годы кластеры занимают нишу как в сфере распределённых вычислений (в основном начных), так и в сфере веб-сервисов – там, где нужно на огромное количество запросов отвечать ежесекундно.</p>
+              <p>В части распределённых вычислений есть несколько популярных решений:</p>
+              <ul>
+                <li>MPI (Message Passing Interface) – стандарт взаимодействия между процессами, которые могут выполняться на разных узлах кластера. На разных узлах выполняются разные программы, но задача их взаимодействия, обмена данными решается проще за счёт стандарта MPI</li>
+                <li>MOSIX (Cluster Management System) – дистрибутив с пропатченным ядром Линукс. Программы не нуждаются в перекомпиляции, а по кластеру могут мигрировать запущенные процессы, причём это происходит в автоматическом режиме. Цель миграции – найти узлы, которые имеют большую производительность и меньшую нагрузку.</li>
+              </ul>
+              <p>Сегодня собрать микро-версию суперкомпьютера может каждый. Уже готовые сборки (микросхемы со стойками и системами охлаждения) продаются на том же Алиэкспресс. ПО находится в открытом доступе и бесплатно. Для управления кластером из мини-ПК часто используются специальные сборки Линукс.</p>
+              <p>Самый большой в мире суперкомпьютер из более тысячи Raspberry Pi 3 B+ в 2019 представила Oracle – компания-разработчик программного обеспечения. В качестве ОС в ход пошла сборка Oracle Autonomous Linux.</p>
+              <img src="images-articles/Raspberry-1_2.png" class="img-fluid mx-auto d-block" alt="Суперкомпьютер из RaspberryPI 3 B+ на выставке Oracle OpenWorld 2019">
+              <p class="text-center my-2">Рисунок 2. Суперкомпьютер на Raspberry от Oracle</p>
+              <p>Компьютеры обменивались между собой данными по LAN-портам. Для коммуникации задействовали 48-портовые сетевые концентраторы Ubiquiti. Для обеспечения установки энергией использовались специально разработанные БП.</p>
+              <p>Практическое применение установки компанией пока не планируется. Для Oracle интерес был только в самом процессе сборки – никто до них не собирал проект на Paspberry Pi таких масштабов, поэтому компании пришлось разрабатывать все аппаратные решения с нуля.</p>
+              
+              <h3>#Сделать робота под управлением мини-компьютера</h3>
+              <p>Выбор аппаратно-программных средств для построения систем автоматики и робототехники зависит от нескольких факторов, в том числе и от масштабов проекта. Raspberry Pi очень удобно использовать как управляющее устройство для роботов – у него уже есть встроенный модуль Wi-Fi, а вся аппаратная часть робота будет связываться с ним по USB. Интерфейсы для управления роботами уже написаны, остаётся только их установить. Тем не менее, для небольших роботов без сложных интерфейсов более выгодно использовать Arduino.</p>
+              <img src="images-articles/Raspberry-1_3.jpg" class="img-fluid mx-auto d-block" alt="Робот Keywish Panther-Tank на гусеничном шасси и с оптическим модулем">
+              <p class="text-center my-2">Рисунок 3. Робот Keywish Panther-Tank для проекта Arduino</p>
+              <p>Один из самых интересных роботов - робот на базе Raspberry Pi 4, решающий задачи манипулирования и обслуживания. Он был создан французской робототехнической компанией Pollen Robotics и уже находится в продаже. </p>
+              <img src="images-articles/Raspberry-1_4.jpg" class="img-fluid mx-auto d-block" alt="Робот Rachy с манипулятором-клешнёй">
+              <p class="text-center my-2">Рисунок 4. Робот Rachy</p>
+      
+            <nav class="blog-pagination my-5  " aria-label="Pagination">
+              <a class="btn btn-outline-primary rounded-pill" href="portfolio-articles.html">К другим статьям</a>
+              <a class="btn btn-outline-secondary rounded-pill" href="article-RaspberryPI.html#">Наверх</a>
+            </nav>
+            </article>
+      
+          </div>
+        </div>
+        
+      
+          
+      
+      </main>
+    
+  </body>
+</html>
+
+
