@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    /*background-image: url('../images/background.jpg'); */
+    background-size: cover; /* Задний фон будет подстраиваться под размер окна */
+    background-repeat: no-repeat;
+    
+    background-size: 100% auto; /* Ширина будет 100% ширины окна, высота автоматически подстраивается 
+    background-repeat: no-repeat;
+    background-position: center center; /* Центрируйте изображение по центру окна 
+    */
+}
+
+h1 {
+    color: #333;
+    font-size: large;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-container {
+    margin: 20px auto;
+    /*display: inline-block;*/
+    background-color: #eee;
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    float: left; /* Плавающий элемент справа */
+}
+
+.controls-field-element {
+    float: left;
+    display: inline-flex;
+    margin-bottom: 5px;
+}
+
+.controls-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.controls {
+    border: 2px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 20%; /* Ширина настроек 20% экрана */
+    float: left; /* Плавающий элемент слева */
+}
+
+.field {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row; /* Строки отображаются горизонтально */
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    margin: 5px;
+    position: relative; /* Добавляем позиционирование для карточек */
+    display: flex; /* Добавляем flex-контейнер для центрирования */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+}
+
+
+.empty {
+    background-color: #bfbfbf;
+}
+
+.treasure {
+    background-color: gold;
+    background-image: url("treasure.png"); /* Замените 'treasure.png' на путь к изображению сокровища */
+    background-size: cover;
+}
+
+.score {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    /*background: rgba(255, 255, 255, 0.7);*/
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #0819ff;
+}
+
+.alien-image {
+    width: 80%; /* Ширина 100% от родительскего элемента */
+    height: 80%; /* Высота 100% от родительского элемента */
+    object-fit: cover; /* Масштабируем изображение, чтобы оно полностью заполнило родительский элемент */
+}
+
+.hero-image {
+    width: 60%; /* Ширина 100% от родительскего элемента */
+    height: 60%; /* Высота 100% от родительского элемента */
+    object-fit: cover; /* Масштабируем изображение, чтобы оно полностью заполнило родительский элемент */
+}
+
+.treasure-image {
+    width: 60%; /* Ширина 100% от родительскего элемента */
+    height: 60%; /* Высота 100% от родительского элемента */
+    object-fit: cover; /* Масштабируем изображение, чтобы оно полностью заполнило родительский элемент */
+}
+
