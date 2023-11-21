@@ -8,9 +8,9 @@ let algorithmScore = 0; // Счетчик для алгоритма
 
 //Пути к "Пришельцам"
 const alienImages = [
-    "/images/aliens/alien-1.png",
-    "/images/aliens/alien-2.png",
-    "/images/aliens/alien-3.png",
+    "images/aliens/alien-1.png",
+    "images/aliens/alien-2.png",
+    "images/aliens/alien-3.png",
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { score: 5, image: null, isEmpty: false },
                 { score: -3, image: null, isEmpty: false },
                 { score: 2, image: null, isEmpty: false },
-                { score: 1, image: "/images/treasure.png", isEmpty: false },
+                { score: 1, image: "images/treasure.png", isEmpty: false },
             ],
             [
                 { score: -1, image: null, isEmpty: false },
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { score: 3, image: null, isEmpty: false },
             ],
             [
-                { score: 4, image: "/images/hero.png", isEmpty: false },
+                { score: 4, image: "images/hero.png", isEmpty: false },
                 { score: 2, image: null, isEmpty: false },
                 { score: 3, image: null, isEmpty: false },
                 { score: 5, image: null, isEmpty: false },
@@ -138,9 +138,9 @@ document.addEventListener("DOMContentLoaded", function () {
         gameState = []; //Очищаем предыдущее состояние игры
 
         const alienImages = [
-            "/images/aliens/alien-1.png",
-            "/images/aliens/alien-2.png",
-            "/images/aliens/alien-3.png",
+            "images/aliens/alien-1.png",
+            "images/aliens/alien-2.png",
+            "images/aliens/alien-3.png",
         ];
 
         for (let i = 0; i < rows; i++) {
@@ -192,21 +192,21 @@ document.addEventListener("DOMContentLoaded", function () {
                     cell.appendChild(alienImage);
                 } else if (i == rows - 1 && j == 0) {
                     const alienImage = document.createElement("img");
-                    alienImage.src = "/images/hero.png";
+                    alienImage.src = "images/hero.png";
                     alienImage.alt = "Hero";
                     alienImage.className = "hero-image"; // Применяем стили для изображения героя
 
-                    cellState.image = "/images/hero.png";
+                    cellState.image = "images/hero.png";
 
                     // Добавляем изображение героя в карточку
                     cell.appendChild(alienImage);
                 } else if (j == columns - 1 && i == 0) {
                     const alienImage = document.createElement("img");
-                    alienImage.src = "/images/treasure.png";
+                    alienImage.src = "images/treasure.png";
                     alienImage.alt = "Treasure";
                     alienImage.className = "treasure-image"; // Применяем стили для изображения сокровища
 
-                    cellState.image = "/images/treasure.png";
+                    cellState.image = "images/treasure.png";
 
                     // Добавляем изображение сокровища в карточку
                     cell.appendChild(alienImage);
@@ -256,10 +256,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     alienImage.src = gameState[i][j].image;
                     //alert(alienImage.src);
 
-                    if (alienImage.src.includes("/images/hero.png")) {
+                    if (alienImage.src.includes("images/hero.png")) {
                         alienImage.alt = "Hero";
                         alienImage.className = "hero-image";
-                    } else if (alienImage.src.includes("/images/treasure.png")) {
+                    } else if (alienImage.src.includes("images/treasure.png")) {
                         alienImage.alt = "Treasure";
                         alienImage.className = "treasure-image";
                     } else {
@@ -286,7 +286,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         for (let i = 0; i < rows; i++) {
             for (let j = 0; j < columns; j++) {
-                if (gameState[i][j].image === "/images/hero.png") {
+                if (gameState[i][j].image === "images/hero.png") {
                     let newI = i;
                     let newJ = j;
 
@@ -303,7 +303,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     console.log("New i: " + newI, "New j: " + newJ);
 
                     // Move the hero to the new position
-                    gameState[newI][newJ].image = "/images/hero.png";
+                    gameState[newI][newJ].image = "images/hero.png";
                     //gameState[newI][newJ].score = 0;
 
                     playerScore += gameState[newI][newJ].score;
@@ -315,7 +315,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     gameState[i][j].isEmpty = true;
 
                     if (j == newJ) {
-                        gameState[newI][newJ].image = "/images/hero.png";
+                        gameState[newI][newJ].image = "images/hero.png";
                     }
 
                     // Update the visual representation of the grid
